@@ -42,5 +42,5 @@ jobs:
             linux/arm/v7
           push: true
           tags: |
-            chalisekrishna418/${{ github.repository }}:latest
-            chalisekrishna418/${{ github.repository }}:${{ env.IMAGE_TAG }}
+            krishnachalise418/openvpn-docker:latest
+            krishnachalise418/openvpn-docker:${{ env.IMAGE_TAG }}
