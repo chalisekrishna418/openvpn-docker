@@ -70,7 +70,7 @@ services:
   openvpn:
     cap_add:
      - NET_ADMIN
-    image: kylemanna/openvpn
+    image: krishnachalise418/openvpn-docker
     container_name: openvpn
     ports:
      - "1194:1194/udp"
