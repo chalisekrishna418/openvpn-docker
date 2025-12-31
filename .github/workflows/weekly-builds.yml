@@ -28,7 +28,7 @@ jobs:
 
       - name: Compute image tag
         run: |
-          calculatedSha="weekly-build-(20251231-weekly-build)"
+          calculatedSha="weekly-build-$(date +%Y%m%d)"
           echo "IMAGE_TAG=$calculatedSha" >> $GITHUB_ENV
 
       - name: Build and push multi-arch image
