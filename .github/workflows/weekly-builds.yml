@@ -28,8 +28,8 @@ jobs:
 
       - name: Compute image tag
         run: |
-          calculatedSha=$(20251231-weekly-build)
-          echo "IMAGE_TAG=weekly-build-$calculatedSha" >> $GITHUB_ENV
+          calculatedSha="weekly-build-(20251231-weekly-build)"
+          echo "IMAGE_TAG=$calculatedSha" >> $GITHUB_ENV
 
       - name: Build and push multi-arch image
         uses: docker/build-push-action@v6
