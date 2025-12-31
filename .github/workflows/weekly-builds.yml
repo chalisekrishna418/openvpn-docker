@@ -42,5 +42,5 @@ jobs:
             linux/arm/v7
           push: true
           tags: |
-            hub.docker.io/chalisekrishna418/${{ github.repository }}:latest
-            hub.docker.io/chalisekrishna418/${{ github.repository }}:${{ env.IMAGE_TAG }}
+            chalisekrishna418/${{ github.repository }}:latest
+            chalisekrishna418/${{ github.repository }}:${{ env.IMAGE_TAG }}
